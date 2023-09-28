@@ -4,7 +4,6 @@ groupId = groupId.replace(".","/")
 echo groupId
 sh """
 curl -u admin:admin -o ${outputFile} -X GET
-"${NEXUS_URUL}/repository/${repoName}/${groupId}/${artifactId}/${version}/doctor-online-${ve
-rsion}.${extension}"
+"${NEXUS_URUL}/repository/${repoName}/${groupId}/${artifactId}/${version}/doctor-online-${version}.${extension}"
 """
 }
